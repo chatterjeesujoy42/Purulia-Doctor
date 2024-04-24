@@ -50,3 +50,49 @@ a{
 a:visited{
     color: #6741D9;
 }
+
+.container{
+    height: 100px;
+    width: 50%;
+    display: flex;
+    column-gap: 30px;
+    color: white;
+
+}
+
+.box{
+    width: 40%;
+    height: 100%;
+    background-color: #6741D9;
+    border: none;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    font-size: 18px;
+
+}
+.maincon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.box1{
+    background-image: url(../css/icons/doctors.png);
+    background-repeat: no-repeat;
+    background-position: 18px 14px; 
+}
+.box2{
+    background-image: url(../css/icons/clinic.png);
+    background-repeat: no-repeat;
+    background-position: 20px 20px; 
+}
+.box3{
+    background-image: url(../css/icons/blood-bank.png);
+    background-repeat: no-repeat;
+    background-position: 3px 17px; 
+
+}
