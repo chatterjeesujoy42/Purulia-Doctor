@@ -12,7 +12,8 @@ body {
     background-size: cover;
     background-position: center;
 }
-.heading{
+
+.heading {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,14 +22,16 @@ body {
     word-spacing: 3px;
     letter-spacing: 5px;
 }
-.search-box{
+
+.search-box {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 60px;
     width: auto;
 }
-#search{
+
+#search {
     width: 57%;
     height: 80%;
     border-radius: 26px;
@@ -38,20 +41,22 @@ body {
     font-size: 16px;
     background-color: none;
     background-image: url(../css/icons/search-interface-symbol.png);
-    background-position: 10px 10px; 
+    background-position: 10px 10px;
     background-repeat: no-repeat;
     padding: 12px 20px 12px 40px;
     outline: none;
 }
-a{
+
+a {
     cursor: pointer;
     text-decoration: none;
 }
-a:visited{
+
+a:visited {
     color: #6741D9;
 }
 
-.container{
+.container {
     height: 100px;
     width: 50%;
     display: flex;
@@ -60,7 +65,7 @@ a:visited{
 
 }
 
-.box{
+.box {
     width: 40%;
     height: 100%;
     background-color: #6741D9;
@@ -73,26 +78,84 @@ a:visited{
     font-size: 18px;
 
 }
-.maincon{
+
+.maincon {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
-.box1{
+.box1 {
     background-image: url(../css/icons/doctors.png);
     background-repeat: no-repeat;
-    background-position: 18px 14px; 
+    background-position: 18px 14px;
 }
-.box2{
+
+.box2 {
     background-image: url(../css/icons/clinic.png);
     background-repeat: no-repeat;
-    background-position: 20px 20px; 
+    background-position: 20px 20px;
 }
-.box3{
+
+.box3 {
     background-image: url(../css/icons/blood-bank.png);
     background-repeat: no-repeat;
-    background-position: 3px 17px; 
+    background-position: 3px 17px;
 
+}
+
+img {
+    /* width: 770px;
+    height: 400px; */
+    background-size: cover;
+}
+
+.img-container {
+    padding: 2rem;
+}
+
+.slider-wrapper {
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+}
+
+.slider {
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 0.5rem;
+}
+
+.slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(50%);
+    z-index: 1;
+}
+
+.slider-nav a {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #ffff;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+    opacity: 1;
 }
